@@ -52,6 +52,10 @@ public class Metodos {
 
 	}
 
+	public void clicarCookies1(By el) {
+		driver.findElement(el).click();
+	}
+
 	public void preencherEmail(String dado, By el) {
 		driver.findElement(el).sendKeys(dado);
 	}
@@ -60,4 +64,12 @@ public class Metodos {
 		driver.findElement(el).click();
 	}
 
+	public void comoFacoCartao(By el) {
+		driver.findElement(el).click();
+
+	}
+
+	public String validaTexto(By el) {
+		return driver.findElement(el).getText();
+	}
 }

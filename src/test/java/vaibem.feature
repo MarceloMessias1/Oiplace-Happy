@@ -14,3 +14,10 @@ Given que esteja no site "https://www.oiplace.com.br/"
     And clique em contratar
     But inserir email invalido
     Then sistema emitira aviso de advertencia
+    
+    Scenario: Duvidas Frequentes
+    
+    When clicar vai bem
+    And clicar como faco meu cartao vai bem
+    Then valido texto com informacao desejada
+    
